@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 
 class Kele
     include HTTParty
@@ -13,5 +14,10 @@ class Kele
         
         @authorization_token = response["auth_token"]
         raise "Invalid Email or Password." if @authorization_token.nil?
+    end
+    
+    def get_me
+        response = self.class.get('/users/me', headers: { "authorization" => @authorization_token })
+        JSON.parse(response.body)
     end
 end
