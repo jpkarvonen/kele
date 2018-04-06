@@ -26,5 +26,8 @@ module Roadmap
         })
         puts "Your message sent!" if response.success?
     end
+    
+    def remaining_checkpoints(chain_id)
+        get("/enrollment_chains/#{chain_id}/checkpoints_remaining_in_section")
+    end
 end
-
