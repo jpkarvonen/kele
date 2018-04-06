@@ -30,4 +30,12 @@ class Kele
     def get_mentor_availability(id)
         get("/mentors/#{id}/student_availability")
     end
+    
+    
 end
+
+#require './lib/kele'
+#kele_client = Kele.new("jpkarvonen@gmail.com", "aajpk0840")
+#kele_client.create_message("jpkarvonen@gmail.com", 2386708, "kele test", "kele test")
+#37650
+#422983
