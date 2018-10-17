@@ -1,4 +1,6 @@
-# Kele: A Ruby Gem API client that accesses Bloc’s (bloc.io) API
+# Kele:
+
+## A Ruby Gem API client that accesses Bloc’s (bloc.io) API
 
 ### Features Include:
 
